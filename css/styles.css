@@ -400,6 +400,8 @@ img {
 
 .clients {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clients-header {
@@ -432,8 +434,8 @@ img {
   margin: auto;
   margin-top: 16px;
 
-  display: block;
-  outline: 1px solid red;
+  display: flex;
+  align-items: center;
 }
 
 .clients-logo {
@@ -443,11 +445,28 @@ img {
   fill: #afb1b8;
 }
 
+.clients-logo:hover {
+  fill: var(--accent-color);
+}
+
+.clients-companies:hover {
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
   background-color: var(--secondary-text-color);
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-social {
+  display: flex;
 }
 
 .address-info,
