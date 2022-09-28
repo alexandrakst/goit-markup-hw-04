@@ -383,9 +383,6 @@ img {
   padding: 12px;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-
-  fill: currentColor;
 }
 
 .social-link:hover {
@@ -461,12 +458,42 @@ img {
   background-color: var(--secondary-text-color);
 }
 
+.footer-logo {
+  margin-right: 156px;
+}
+
+.footer-header {
+  margin-bottom: 20px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--fourth-text-color);
+}
+
 .footer-flex {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-social {
   display: flex;
+}
+
+.footer-link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  fill: var(--fourth-text-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:hover {
+  background-color: var(--accent-color);
 }
 
 .address-info,
