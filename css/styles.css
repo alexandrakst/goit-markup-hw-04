@@ -4,12 +4,13 @@
   --third-text-color: #757575;
   --fourth-text-color: #ffffff;
   --logo-color: #000000;
+  --secondary-logo-color: #afb1b8;
   --address-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
   --button-hover: #188ce8;
   --primary-background-color: #f5f4fa;
   --border-color: #ececec;
-  --secondary-border-colr: #eeeeee;
+  --secondary-border-color: #eeeeee;
   --overlay-color: rgba(47, 48, 58, 0.4);
   --primary-font: 'Roboto', sans-serif;
   --primary-font-size: 14px;
@@ -280,9 +281,6 @@ img {
 .about-section-icon {
   display: block;
   margin: 0 auto;
-
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
 }
 
 .our-works {
@@ -369,14 +367,8 @@ img {
 .team-social {
   display: flex;
   justify-content: center;
-  /* align-self: space-between; */
 
   margin-bottom: 30px;
-}
-
-.item-social {
-  fill: var(--third-text-color);
-  /* margin-right: 34px; */
 }
 
 .social-link {
@@ -384,18 +376,16 @@ img {
   padding: 12px;
   width: 44px;
   height: 44px;
+
+  fill: var(--secondary-logo-color);
 }
 
 .social-link:hover,
 .social-link:focus {
   fill: var(--fourth-text-color);
   background-color: var(--accent-color);
-  border-radius: 50%;
-}
 
-.item-social:hover,
-.item-social:focus {
-  fill: var(--fourth-text-color);
+  border-radius: 50%;
 }
 
 .clients {
@@ -405,14 +395,11 @@ img {
 }
 
 .clients-header {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-top: 94px;
+  margin-bottom: 50px;
 
-  /* font-family: 'Roboto';
-  font-style: normal; */
-  font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -425,14 +412,21 @@ img {
   margin: 0 auto;
   margin-bottom: 94px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--secondary-logo-color);
   border-radius: 4px;
 }
+
+.clients-companies:last-child {
+  margin-right: 0;
+}
+
 .clients-link {
   width: 106px;
   height: 60px;
   margin: auto;
   margin-top: 16px;
+
+  color: var(--secondary-logo-color);
 
   display: flex;
   align-items: center;
@@ -442,17 +436,17 @@ img {
   display: block;
   margin: 0 auto;
 
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
 .clients-logo:hover {
-  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .clients-companies:hover,
 .clients-companies:focus {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
+  border-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .footer {
@@ -570,6 +564,9 @@ img {
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--fourth-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
   cursor: pointer;
 }
 
