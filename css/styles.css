@@ -172,7 +172,6 @@ img {
   text-align: center;
 
   max-width: 1600px;
-  height: 600px;
 
   background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)),
     url(../images/Img-hero.jpg);
@@ -431,7 +430,8 @@ img {
   color: var(--accent-color);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -463,6 +463,8 @@ img {
 
 .footer-social {
   display: flex;
+
+  gap: 10px;
 }
 
 .footer-link {
@@ -470,7 +472,7 @@ img {
   padding: 12px;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
+
   border-radius: 50%;
 
   fill: var(--fourth-text-color);
